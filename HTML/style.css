@@ -1,0 +1,24 @@
+
+.title {
+    font-size: 100px;
+}
+
+#main {
+    background-color: rgb(41, 38, 33);
+}
+
+.color-red {
+    color: red;
+}
+
+.color-blue {
+    color: rgb(9, 18, 53);
+}
+
+.table td {
+    background-color: rgb(243, 229, 229);
+}
+
+.table th {
+    background-color: rgb(187, 247, 177);
+}
