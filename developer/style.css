@@ -1,16 +1,26 @@
+body {
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
 .top {
     background: #EEEFF1;
+    padding-bottom: 100px;
 }
 
 .header {
-    border: 1px solid blue;
     justify-content: space-between;
     display: flex;
-    padding: 50px 0px 30px 0px;
+    padding: 50px 0px 160px 0px;
+    margin-left: 100px;
 }
 
 .logo {
-    background: green;
+    font-family: 'Revalia', cursive;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #34547A;
 }
 
 .menu {
@@ -22,29 +32,79 @@
     margin: 0;
 }
 
-.menu-items li {
+.menu-items li a {
+    text-decoration: none;
     margin-right: 42px;
 }
 
 .intro {
     justify-content: space-between;
     display: flex;
-    padding: 0px 100px 100px 110px;
+    max-width: 1028px;
+    margin:0px auto 188px auto;
+}
+
+.intro-img {
+    margin-top: 20px;
+    height: 233.7px;
+    width: 357px;
 }
 
 .intro-text {
-    margin-left: 42px; 
+    margin-left: 42px;
+}
+
+.intro-text h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+    margin-top: 0%;
+}
+
+.intro-text p {
+    margin-bottom: 40px;
+    max-width: 540px;
+    color: #727272; 
 }
 
 .link-contact {
-    margin-top: 260px;
     text-decoration: none;
     text-align: center;
     background: #34547A;
     color: #FFFFFF;
-    
+    padding: 20px 41px;
+    display: inline-block;
 }
 
+.about-me {
+    margin: 100px auto 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.about-me p {
+    max-width: 540px;
+    color: #727272;
+}
+
+.projects {
+    margin: 50px auto 50px auto;
+    background-color: #34547A;
+}
+
+.project-items {
+    display: flex;
+    max-width: 1000px;
+    align-items: center;
+    list-style: none;
+    margin: 0 auto 0 auto;
+}
+
+.project-items li img {
+    margin: 70px 30px;
+}
 
 
 
