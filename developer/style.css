@@ -65,7 +65,13 @@ body {
     margin-bottom: 40px;
     max-width: 540px;
     color: #727272; 
+    transition: all 2s ease-out ;
 }
+
+/* .intro-text p:hover{
+    color: crimson;
+    max-width: 640px;
+} */
 
 .link-contact {
     text-decoration: none;
@@ -75,6 +81,23 @@ body {
     padding: 20px 41px;
     display: inline-block;
 }
+
+.link-contact:hover{
+    animation: pulse 2s infinite;
+}
+
+/* @keyframes blink {
+    0% {
+        background-color: #34547A;
+    }
+    50% {
+        background-color: #727272;
+    }
+    100% {
+        background-color: #34547A;
+    }
+    
+} */
 
 .about-me {
     margin: 100px auto 100px auto;
@@ -143,10 +166,11 @@ body {
     border-radius: 0%; 
     width: 100%;
     height: 5px;
-    box-shadow: 1px 1px 1px #C4C4C4;
   }
 
-.progress-bar::-webkit-progress-value {background-color: #34547A !important;}
+.progress-bar::-webkit-progress-value {
+    background-color: #34547A !important;
+}
 
 .profile-pic{
     height: 350px;
@@ -177,16 +201,45 @@ body {
     margin-top: 50px;
 }
 
-.inner_block {
+.sample {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sample-item {
+    position: relative;
     float:left;
     width:25%;
 }
 
-.inner_block img { 
+.sample-item img { 
     width:100%; 
     height:auto; 
     vertical-align:middle; 
 }
+
+.sample-item::after {
+    background: url("eye.png") center no-repeat;
+    content: "";
+    background-color: rgba(52, 84, 122, 0.8);
+    display: none;
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.sample-item:hover::after{
+    opacity: 1;
+}
+
 .microsoft-items {
     display: flex;
     max-width: 1000px;
