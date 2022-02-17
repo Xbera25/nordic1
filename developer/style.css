@@ -52,6 +52,7 @@ body {
 
 .intro-text {
     margin-left: 42px;
+    margin-right: 42px;
 }
 
 .intro-text h1 {
@@ -199,6 +200,8 @@ body {
 
 .video {
     margin-top: 50px;
+    width:800px;
+    height:450px;
 }
 
 .sample {
@@ -342,4 +345,24 @@ body {
     margin: 70px 10px;
     width: 35px;
     height: 25px;
+}
+
+@media(max-width: 640px) {
+    .top {padding-bottom: 30px;}
+    .menu-items {flex-direction: column;}
+    .intro {flex-direction: column;}
+    .header {padding: 50px 0px 0px 0px;}
+    .intro-text h1 {padding-top: 30px;}
+    .project-items {flex-direction: row;flex-wrap: wrap;}
+    .project-items li img {margin: 10px 30px;}
+    .skill-set {flex-direction: column;}  
+    .skills {
+        margin-right: 0;
+        justify-self: center ;}
+    .video {
+        width:500px;
+        height:250px;}
+    .sample-item {width:50%;}
+    .microsoft-items {flex-direction: row;flex-wrap: wrap;}
+    .microsoft-items li img {margin: 0px 10px;}
 }
