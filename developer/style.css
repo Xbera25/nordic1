@@ -3,6 +3,11 @@ body {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 .top {
     background: #EEEFF1;
     padding-bottom: 100px;
@@ -260,21 +265,27 @@ body {
 
 .wanna-webpage{
     background-color: #EEEFF1;
+    padding: 50px;
+}
+
+.wanna-web{
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    padding: 50px;
-}
-
-.wanna-webpage p {
-    margin-bottom: 40px;
     max-width: 540px;
-    color: #727272; 
+    margin: 0 auto;
 }
 
-.wanna-webpage p {
+.wanna-web p {
+    margin-bottom: 40px;
+    color: #727272; 
+    
+}
+
+.wanna-web p {
     text-align: center;
+    width: 100%;
 }
 
 .inputs{
@@ -282,6 +293,7 @@ body {
     justify-self: center;
     flex-direction: column;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .basic-input{
@@ -291,14 +303,13 @@ body {
 }
 
 .basic-input input{
-    width: 210px;
+    width: 45%;
     height: 30px;
     margin-bottom: 20px;
     border: none;
 }
 
 .basic-input input[placeholder]{
-    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     text-align: top;
@@ -306,10 +317,11 @@ body {
 }
 
 .message-input{
-    width: 450px;
     height: 120px; 
     border: none; 
     text-align: top;
+    resize: none;
+    width: 100%;
 }
 
 .message-input[placeholder]{
