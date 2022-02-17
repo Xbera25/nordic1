@@ -297,7 +297,7 @@ body {
     border: none;
 }
 
-.basic-input input[value]{
+.basic-input input[placeholder]{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -312,7 +312,7 @@ body {
     text-align: top;
 }
 
-.message-input[value]{
+.message-input[placeholder]{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
